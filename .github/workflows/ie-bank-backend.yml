@@ -11,8 +11,8 @@ permissions:
   id-token: write
 
 env:
-  BACKEND_WEBAPP_DEV: kathe1-be-dev
-  BACKEND_WEBAPP_UAT: kathe1-be-uat
+  BACKEND_WEBAPP_DEV: kathee-be-dev
+  BACKEND_WEBAPP_UAT: kathee-be-uat
   source_branch_name: ${{ github.ref }}
   pr_target_branch_name: ${{ github.base_ref }}
   
