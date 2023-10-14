@@ -2,7 +2,7 @@ from iebank_api.models import Account
 import pytest
 
 
-def test_account_innit():
+def test_account_model():
     """
     GIVEN a Account model
     WHEN a new Account is created
