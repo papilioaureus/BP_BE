@@ -27,7 +27,7 @@ class DevelopmentConfig(Config):
         dbhost=os.getenv("DBHOST"),
         dbname=os.getenv("DBNAME"),
     )
-    DEBUG = True
+    DEBUG = True 
 
 
 class UATConfig(Config):
