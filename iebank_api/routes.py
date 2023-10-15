@@ -5,7 +5,7 @@ from iebank_api.models import Account
 
 @app.route("/")
 def hello_world():
-    return "Hello, World!"
+    return "Goodbye, Mars!"
 
 
 @app.route("/skull", methods=["GET"])
