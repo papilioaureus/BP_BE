@@ -33,3 +33,25 @@ def test_create_account(testing_client):
         "/accounts", json={"name": "John Doe", "country": "Spain", "currency": "€"}
     )
     assert response.status_code == 200
+    
+#new test 1
+    
+def test_account_deletion(testing_client):
+    
+    #GIVEN a Flask application
+    #WHEN the '/accounts/<int:id>' page is posted to (DELETE)
+    #THEN check the response is valid
+    
+    response = testing_client.delete('/accounts/1')
+    assert response.status_code == 200
+    
+#new test 2
+def test_get_account(testing_client):
+    """
+    GIVEN a Flask application
+    WHEN THE '/accounts' page is requested to view (GET)
+    THEN check if the response is valid 
+    """
+    response = testing_client.get('/accounts/1')
+    assert response.status_code == 200
+    

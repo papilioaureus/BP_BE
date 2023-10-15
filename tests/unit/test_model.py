@@ -15,3 +15,15 @@ def test_account_model():
     assert account.account_number != None
     assert account.balance == 0.0
     assert account.status == "Active"
+    
+
+#new unit test 
+def test_account_deactivated():
+    """
+    GIVEN a Account model
+    WHEN a new Account is created
+    THEN check if an account can be deactivated with __deactivate__
+    """
+    account = Account("John Doe", "Spain", "€")
+    assert account.__deactivate__() == "Inactive" 
+    
